@@ -68,6 +68,13 @@ p {
 .price-active {
     font-family: Fraunces;
     font-size: 2.2rem;
+    transition: 1s ease all;
+}
+
+.price-active:hover {
+    color:hsl(212, 21%, 14%);
+    transition: 1s ease all;
+    cursor: pointer;
 }
 
 .price-inactive {
@@ -89,9 +96,16 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s ease all;
 }
 
 button img {
     width: 1rem;
     padding: 0 10px;
+}
+
+button:hover {
+    transition: 1s ease all;
+    cursor: pointer;
+    background-color:hsl(212, 21%, 14%);
 }
