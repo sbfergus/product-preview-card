@@ -13,10 +13,6 @@ body {
     background-color: hsl(30, 38%, 92%);
 }
 
-img {
-    border-radius: 10px 10px 0 0 ;
-}
-
 .card {
     background-color: white;
     width: 92%;
@@ -33,6 +29,11 @@ img {
 
 .card > img {
     width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+
+img.desktop-img {
+    display: none;
 }
 
 h1 {
@@ -63,12 +64,14 @@ p {
     justify-content: space-between;
     align-items: center;
     width:65%;
+    
 }
 
 .price-active {
     font-family: Fraunces;
     font-size: 2.2rem;
     transition: 1s ease all;
+    padding-right: 20px;
 }
 
 .price-active:hover {
@@ -109,3 +112,65 @@ button:hover {
     cursor: pointer;
     background-color:hsl(212, 21%, 14%);
 }
+
+@media screen and (max-width: 220px) {
+    .prices-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .card {
+        display: flex;
+    }
+
+    .card > img {
+        width: 50%;
+        border-radius: 10px 0 0 10px ;
+    }
+
+    img.mobile-img {
+        display: none;
+    }
+
+    img.desktop-img {
+        display: block;
+    }
+
+    .card {
+        max-width: 710px;
+    }
+
+    .card-body {
+        width: 40%;  
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+        line-height: 35px;
+    }
+
+    p {
+        font-size: 1.1rem;
+        max-width: 280px;
+        line-height: 30px;
+    }
+
+    .prices-container {
+        margin-bottom: 30px;
+        flex-wrap:wrap; 
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .prices-container {
+         flex-wrap:nowrap; 
+    }
+  }
