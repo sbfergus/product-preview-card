@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+img {
+    border-radius: 10px 10px 0 0 ;
+}
+
+.card {
+    background-color: white;
+    width: 92%;
+    margin: auto;
+    margin-top: 7%;
+    border-radius: 10px;
+}
+
+.card-body {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.card > img {
+    width: 100%;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: .9rem;
+    letter-spacing: .3rem;
+    margin: 18px 0 17px 0;
+}
+
+h2 {
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 30px;
+    color: hsl(212, 21%, 14%);
+}
+
+p {
+    margin: 20px 0px;
+    line-height: 1.5rem;
+    font-size: .95rem;
+    margin-bottom: 40px;
+}
+
+.prices-container {
+    display: flex;
+    color: hsl(158, 36%, 37%);
+    justify-content: space-between;
+    align-items: center;
+    width:65%;
+}
+
+.price-active {
+    font-family: Fraunces;
+    font-size: 2.2rem;
+}
+
+.price-inactive {
+    text-decoration:line-through;
+    font-size: .9rem;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 15px 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button img {
+    width: 1rem;
+    padding: 0 10px;
+}
